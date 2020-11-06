@@ -113,7 +113,7 @@ class PrivateUserApiTests(TestCase):
             name = 'name'
         )
         self.client = APIClient()
-        self.client.force_autenticate(user=self.user)
+        self.client.force_authenticate(user=self.user)
     
 
     def test_retrieve_profile_success(self):
